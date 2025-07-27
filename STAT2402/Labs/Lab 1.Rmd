@@ -1,0 +1,17 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+#Learning R
+
+```{r}
+library(ggplot2)
+library(patchwork)
+
+df = read.csv("irisdata.csv")
+#OR 
+df = read.table("irisdata.csv", header = TRUE, sep = ",")
+head(df)
+```
+
